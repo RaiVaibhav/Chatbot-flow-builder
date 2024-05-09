@@ -5,7 +5,7 @@
 
 Build with CSR side React v18, react-flow, and storybook for all the reusable component
 
-- To visit the story-book view kindly visit [chromatic url.](https://663cfbee0db27ed66a484fc0-wbqitgrttu.chromatic.com/)
+- To visit the story-book view kindly visit [chromatic url.](https://663cfbee0db27ed66a484fc0-vmodbfxiyp.chromatic.com/)
   - Story-book can be used to visualize both, individual component and App component or say Root.
 - To visit the deployed version on netlify kindly visit the [url.](https://chatbot-flow-builder-storybook.netlify.app/)
 
