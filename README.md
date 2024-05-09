@@ -1,25 +1,14 @@
-![](https://github.com/xyflow/web/blob/main/assets/codesandbox-header-ts.png?raw=true)
+## Chatbot Flow builder
 
-# React Flow starter (Vite + TS)
+Build with CSR side React v18, react-flow, and storybook for all the reusable component
 
-We've put together this template to serve as a starting point for folks
-interested in React Flow. You can use this both as a base for your own React
-Flow applications, or for small experiments or bug reports.
+- To visit the story-book view kindly visit [chromatic url.](https://663cfbee0db27ed66a484fc0-wbqitgrttu.chromatic.com/)
+  - Story-book can be used to visualize both, individual component and App component or say Root.
+- To visit the deployed version on netlify kindly visit the [url.](https://chatbot-flow-builder-storybook.netlify.app/)
 
-**TypeScript not your thing?** We also have a vanilla JavaScript starter template,
-just for you!
+This project also uses third party `use-debounce` hook instead of `useDefferedValue` hook because not only `useDefferedValue` brings more complexity but it was also un-related to my use case.
 
-## Getting up and running
-
-You can get this template without forking/cloning the repo using `degit`:
-
-```bash
-npx degit xyflow/vite-react-flow-template your-app-name
-```
-
-The template contains mostly the minimum dependencies to get up and running, but
-also includes eslint and some additional rules to help you write React code that
-is less likely to run into issues:
+## Installation
 
 ```bash
 npm install # or `pnpm install` or `yarn install`
@@ -34,21 +23,3 @@ npm run dev
 
 While the development server is running, changes you make to the code will be
 automatically reflected in the browser!
-
-## Things to try:
-
-- Create a new custom node inside `src/nodes/` (don't forget to export it from `src/nodes/index.ts`).
-- Change how things look by [overriding some of the built-in classes](https://reactflow.dev/learn/customization/theming#overriding-built-in-classes).
-- Add a layouting library to [position your nodes automatically](https://reactflow.dev/learn/layouting/layouting)
-
-## Resources
-
-Links:
-
-- [React Flow - Docs](https://reactflow.dev)
-- [React Flow - Discord](https://discord.com/invite/Bqt6xrs)
-
-Learn:
-
-- [React Flow – Custom Nodes](https://reactflow.dev/learn/customization/custom-nodes)
-- [React Flow – Layouting](https://reactflow.dev/learn/layouting/layouting)
