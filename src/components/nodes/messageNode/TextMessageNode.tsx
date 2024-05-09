@@ -1,5 +1,5 @@
 import { Handle, NodeProps, Position } from "reactflow";
-import IconMap from "../../../assets/index";
+import IconMap, { MessageIcon } from "../../../assets/index";
 import { WHATSAPP } from "../../../constants";
 import { memo, useMemo } from "react";
 
@@ -34,10 +34,10 @@ const MessageNode = ({ data, selected }: MessageNode) => {
         isConnectable={true}
       />
       <div className="flex flex-col shadow-lg rounded-[inherit]">
-        <div className="flex justify-between bg-[#a1e4e7] text-[8px] font-bold rounded-t-md py-[2px] px-2">
+        <div className="flex justify-between bg-[#a1e4e7] text-[8px] font-bold rounded-t-md py-[2px] px-2 items-center">
           <div>
-            <h5>
-              <span>💬</span> {data.title}
+            <h5 className="inline-flex items-center gap-1">
+              <span><MessageIcon className="h-1.5 w-1.5 stroke-black"/></span> {data.title}
             </h5>
           </div>
           {Icon && (
