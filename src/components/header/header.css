@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .storybook-header {
+    @apply flex items-center justify-between px-5 py-[10px] border-b-[rgba(0,0,0,0.1)] border-b border-solid;
+  }
+  .storybook-header svg {
+    @apply inline-block align-top;
+  }
+  .storybook-header h1 {
+    @apply font-bold text-xl leading-none inline-block align-top ml-2.5 mr-0 my-1.5;
+  }
+  .storybook-header button + button {
+    @apply ml-2.5;
+  }
+  .storybook-header .welcome {
+    @apply text-[#333] text-sm mr-2.5;
+  }  
+}
