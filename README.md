@@ -16,12 +16,15 @@ This project also uses third party `use-debounce` hook instead of `useDefferedVa
 npm install # or `pnpm install` or `yarn install`
 ```
 
-Vite is a great development server and build tool that we recommend our users to
-use. You can start a development server with:
+## Run locally
 
 ```bash
 npm run dev
 ```
 
-While the development server is running, changes you make to the code will be
-automatically reflected in the browser!
+## Build for production.
+
+```bash
+npm run build
+```
+This will first run the typescript, lint and prettier checks and if it succeed then it will build the production.
