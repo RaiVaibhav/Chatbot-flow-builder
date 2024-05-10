@@ -1,6 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/797c0d93-20a9-4fb5-bb52-5a35532e458d/deploy-status)](https://app.netlify.com/sites/chatbot-flow-builder-storybook/deploys)
 
-
 ## Chatbot Flow builder
 
 Build with CSR side React v18, react-flow, and storybook for all the reusable component

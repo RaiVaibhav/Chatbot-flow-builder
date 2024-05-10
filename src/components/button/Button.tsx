@@ -26,18 +26,18 @@ interface ButtonProps {
 // Hack to to tailwind to generate the css
 // at the build time
 const sizeClass = (size: string) => {
-  switch(size) {
-    case 'large': {
-      return 'storybook-button--large'
+  switch (size) {
+    case "large": {
+      return "storybook-button--large";
     }
-    case 'small': {
-      return 'storybook-button--small'
+    case "small": {
+      return "storybook-button--small";
     }
     default: {
-      return 'storybook-button--medium'
+      return "storybook-button--medium";
     }
   }
-}
+};
 
 /**
  * Primary UI component for user interaction
@@ -53,7 +53,7 @@ export const Button = ({
     ? "storybook-button--primary"
     : "storybook-button--secondary";
 
-  const sizeCls = sizeClass(size)
+  const sizeCls = sizeClass(size);
   return (
     <button
       type="button"

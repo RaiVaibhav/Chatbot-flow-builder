@@ -15,5 +15,5 @@
   }
   .storybook-header .welcome {
     @apply text-[#333] text-sm mr-2.5;
-  }  
+  }
 }

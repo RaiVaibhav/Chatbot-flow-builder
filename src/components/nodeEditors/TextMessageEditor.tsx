@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useDebounce } from 'use-debounce';
+import { useDebounce } from "use-debounce";
 
 type Props = {
   title: string;
@@ -7,7 +7,6 @@ type Props = {
   onChange: (c: { [key: string]: string }) => void;
   onExit: () => void;
 };
-
 
 /**
  * Primary UI component for Text Message Editor
@@ -33,11 +32,10 @@ export default function TextMessageEditor({
   useEffect(() => {
     if (deboucnedValue.length >= 10) {
       onChange({
-        content: deboucnedValue
-      })
+        content: deboucnedValue,
+      });
     }
-
-  }, [deboucnedValue, onChange])
+  }, [deboucnedValue, onChange]);
 
   return (
     <div>
@@ -62,7 +60,9 @@ export default function TextMessageEditor({
               onChange={handleChange}
               className="w-full border border-gray-400 rounded-md p-2"
             />
-            {value.length < 10 && <p className="text-xs text-red-400">Need atleast 10 characters</p>}
+            {value.length < 10 && (
+              <p className="text-xs text-red-400">Need atleast 10 characters</p>
+            )}
           </label>
         </form>
       </div>

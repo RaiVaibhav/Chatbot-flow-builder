@@ -1,4 +1,9 @@
-import { useCallback, useEffect, useState, MouseEvent as ReactMouseEvent } from "react";
+import {
+  useCallback,
+  useEffect,
+  useState,
+  MouseEvent as ReactMouseEvent,
+} from "react";
 import {
   Background,
   Controls,
@@ -37,12 +42,12 @@ function AppWrapper() {
   const [selectedNode, setSelectedNode] = useState<Node | null>(null);
   const { setViewport } = useReactFlow();
   const [toast, setToast] = useState<{ type: string; message: string } | null>(
-    null
+    null,
   );
   const onEdgeUpdate = useCallback(
     (oldEdge: Edge, newConnection: Connection) =>
       setEdges((els) => updateEdge(oldEdge, newConnection, els)),
-    [setEdges]
+    [setEdges],
   );
   const onConnect: OnConnect = useCallback(
     (connection) =>
@@ -55,10 +60,10 @@ function AppWrapper() {
               type: MarkerType.ArrowClosed,
             },
           },
-          edges
-        )
+          edges,
+        ),
       ),
-    [setEdges]
+    [setEdges],
   );
 
   const onDragOver = useCallback((event: DEvent<HTMLDivElement>) => {
@@ -95,7 +100,7 @@ function AppWrapper() {
         setNodes((nds) => nds.concat(newNode));
       }
     },
-    [reactFlowInstance, setNodes]
+    [reactFlowInstance, setNodes],
   );
 
   const onExit = () => setSelectedNode(null);
@@ -112,11 +117,11 @@ function AppWrapper() {
               };
             }
             return node;
-          })
+          }),
         );
       }
     },
-    [selectedNode, setNodes]
+    [selectedNode, setNodes],
   );
 
   const handleElementClick = (_: ReactMouseEvent, node: Node) => {
@@ -125,7 +130,7 @@ function AppWrapper() {
 
   const validateSubmit = () => {
     const nodesWithEmptyTargets = nodes.filter(
-      (node: Node) => !edges.some((edge) => edge.target === node.id)
+      (node: Node) => !edges.some((edge) => edge.target === node.id),
     );
 
     if (nodes.length > 1 && nodesWithEmptyTargets.length > 1) {
